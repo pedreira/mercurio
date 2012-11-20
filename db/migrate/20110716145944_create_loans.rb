@@ -1,5 +1,4 @@
 class CreateLoans < ActiveRecord::Migration
-
   def self.up
     drop_table :loans
     create_table :loans do |t|
