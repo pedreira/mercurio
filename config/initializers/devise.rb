@@ -3,7 +3,7 @@
 Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in DeviseMailer.
-  config.mailer_sender = "academia@academiadefilosofia.org"
+  config.mailer_sender = "supermercado@pedreira.com"
   config.case_insensitive_keys = [:email]
 
   # Configure the class responsible to send e-mails.
@@ -21,9 +21,9 @@ Devise.setup do |config|
   
   config.omniauth :open_id, 
                   :store => OpenID::Store::Filesystem.new('./tmp'), 
-                  :domain => 'academiadefilosofia.org', 
+                  :domain => 'pedreira.com', 
                   :name => :google_apps, 
-                  :identifier => 'https://www.google.com/accounts/o8/id?hd=academiadefilosofia.org'
+                  :identifier => 'https://www.google.com/accounts/o8/id?hd=pedreira.com'
   
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is

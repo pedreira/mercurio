@@ -35,7 +35,7 @@ pt_BR:
   neighborhood: "Bairro"
   address: "Endereço"
   graduation_date: "Data da Formatura"
-  sign_up_date: "Aluno desde"
+  sign_up_date: "Colaborador desde"
   exit_date: "Data da saída"
   active: "Ativo"
   inactive: "Inativo"

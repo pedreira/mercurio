@@ -76,19 +76,6 @@
   <%= @person.zip_code %>
 </p>
 
-<h3>Escola</h3>
-
-<p>
-  <b><%=t(:sign_up_date)%>:</b>
-  <%= @person.sign_up_date %>
-</p>
-
-<p>
-  <b><%=t(:graduation_date)%>:</b>
-  <%= @person.graduation_date %>
-</p>
-
-
 <%= link_to t(:back), people_path, :class => 'button' %>
 <%= link_to t(:edit), edit_person_path(@person), :class => 'button' %>
 
