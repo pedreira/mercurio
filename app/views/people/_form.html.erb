@@ -11,7 +11,7 @@
   <% end %>
 
 <div class="span-24 last">
-  <div class="span-9">
+  <div class="span-8">
     <h4 class="subtitle">Dados Gerais</h4>
     <%= f.label t(:name) %><br/>
     <%= f.text_field :name %><br/>	
@@ -31,8 +31,7 @@
     <%= f.label t(:marital_status) %><br/>
     <%= f.text_field :marital_status %><br/>
   </div>
-  <div class="span-1"></div>
-  <div class="span-9 last">
+  <div class="span-8">
   	<h4 class="subtitle">Endereço</h4>
     <%= f.label t(:address) %><br/>
     <%= f.text_field :address %><br/>
@@ -50,7 +49,7 @@
     <%= f.text_field :state %><br/>
   </div>
 
-  <div class="clear span-9">
+  <div class="span-8 last">
     <h4 class="subtitle">Contato</h4>
     <%= f.label t(:home_phone) %><br/>
     <%= f.text_field :home_phone, :size => 10 %><br/>
@@ -63,11 +62,10 @@
 
     <%= f.label t(:email) %><br/>
     <%= f.text_field :email %><br/>
-  </div>
-  <div class="span-1"></div>
-  <div class="span-9 last">
-  </div>
 
+	<%= f.label :status, 'Ativo' %><br/>
+	<%= f.check_box :status, :checked => @status %><br/>
+  </div>
 </div>
 <%= f.submit %>
 <% end %>
