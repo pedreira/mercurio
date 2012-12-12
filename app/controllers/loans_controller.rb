@@ -1,4 +1,10 @@
 class LoansController < ApplicationController
+
+  before_filter :setup
+  
+  def setup
+    authorize! :manage, @loans
+  end
   
   def index
     media_status_id = params[:media] ? params[:media][:media_status_id] : nil

@@ -6,6 +6,7 @@ class PeopleController < InheritedResources::Base
   
   def new
     @status = true
+    authorize! :new, @people
     super
   end
   
