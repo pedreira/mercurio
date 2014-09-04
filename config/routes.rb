@@ -2,7 +2,7 @@ Mercurio::Application.routes.draw do
 
   resources :genres
   resources :media_types
-  
+
   resources :medias do
     member do
       get 'lend' => 'loans#new'
@@ -10,19 +10,21 @@ Mercurio::Application.routes.draw do
       get 'cofirm_return' => 'loans#confirm_return'
     end
   end
-  
+
   get 'loans' => "loans#index", :as => :loans
   post 'loans' => "loans#create", :as => :loans
-  
+
   get 'people/emails' => "people#emails", :as => :emails
-  
-  resources :people 
-  
+
+  resources :people
+
+  get 'admin', to: 'admin#edit'
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
     get 'sign_in', :to => 'users/sessions#new', :as => :new_user_session
     get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
   end
-  
+
   root :to => "home#index"
   match 'construcao' => "home#construcao"
 
