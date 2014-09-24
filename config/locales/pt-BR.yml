@@ -8,8 +8,11 @@ pt_BR:
   listing: "Listando"
   title: "Título"
   new: "Incluir"
+  toggle: "Alternar"
 
   #Domain
+  user: "Usuário"
+  users: "Usuários"
   duration: "Duração"
   lend: "Emprestar"
   return: "Devolver"
@@ -49,10 +52,10 @@ pt_BR:
   price: "Preço"
   code: "Tombo"
   author: "Autor"
-  loan_days: "Dias de Empréstimo"  
-  pending: 
+  loan_days: "Dias de Empréstimo"
+  pending:
       one: "%{count} pendência"
-      other: "%{count} pendências"  
+      other: "%{count} pendências"
   # formatos de data e hora
   date:
     formats:
@@ -69,8 +72,8 @@ pt_BR:
       - :day
       - :month
       - :year
-  
-  time: 
+
+  time:
     formats:
       default: "%A, %d de %B de %Y, %H:%M h"
       short: "%d/%m, %H:%M h"
@@ -135,7 +138,7 @@ pt_BR:
       decimal_units:
         format: "%n %u"
         units:
-          unit: ""     
+          unit: ""
           thousand: "mil"
           million:
             one: milhão
@@ -234,7 +237,7 @@ pt_BR:
       odd: "deve ser ímpar"
       even: "deve ser par"
 
-  activerecord:      
+  activerecord:
     models:
       media: "Mídia"
       media_type: "Tipo de Mídia"
@@ -250,7 +253,7 @@ pt_BR:
         name: "Nome"
         gender: "Sexo"
         home_phone: "Telefone Residencial"
-        birth_date: "Data de Nascimento"          
+        birth_date: "Data de Nascimento"
     errors:
       models:
         media:
