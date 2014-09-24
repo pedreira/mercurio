@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '3.2.11'
 gem 'inherited_resources'
@@ -11,10 +12,10 @@ gem 'thin'
 #gem "prawn"
 
 #database
-group :production do 
+group :production do
   gem 'pg'
 end
-group :development do 
+group :development do
   gem 'sqlite3'
 end
 
@@ -55,13 +56,13 @@ group :test, :development do
   gem "rspec-rails"
   gem 'webrat'
   gem 'guard'
-  gem 'guard-spork'  
+  gem 'guard-spork'
   gem 'spork'
   gem 'rb-fsevent'
   gem 'growl'
 end
 
-group :production do 
+group :production do
 end
 
 # debbuging
