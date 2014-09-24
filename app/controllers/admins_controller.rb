@@ -7,7 +7,7 @@ class AdminsController < ApplicationController
   end
 
   def index
-    @users = User.all
+    @users = User.find(:all, :order => "email")
   end
 
   def edit
