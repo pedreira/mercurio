@@ -11,10 +11,10 @@ gem 'thin'
 #gem "prawn"
 
 #database
-group :production do 
+group :production do
   gem 'pg'
 end
-group :development do 
+group :development do
   gem 'sqlite3'
 end
 
@@ -30,8 +30,7 @@ gem "sass"
 gem 'devise'
 gem 'devise_invitable'
 gem 'omniauth'
-gem 'omniauth-openid'
-#gem 'oa-openid'
+gem 'omniauth-google-oauth2'
 
 #authorization
 gem "cancan"
@@ -55,13 +54,13 @@ group :test, :development do
   gem "rspec-rails"
   gem 'webrat'
   gem 'guard'
-  gem 'guard-spork'  
+  gem 'guard-spork'
   gem 'spork'
   gem 'rb-fsevent'
   gem 'growl'
 end
 
-group :production do 
+group :production do
 end
 
 # debbuging

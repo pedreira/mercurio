@@ -3,8 +3,8 @@
 </div>
 
 <div>
-<%= link_to(user_omniauth_authorize_path(:google_apps), html_options = {:method => :post, :class => 'button'}) do %>
-	Entre com sua conta do Supermercado Pedreira
+<%= link_to(user_omniauth_authorize_path(:google_oauth2), html_options = {:method => :post, :class => 'button'}) do %>
+	Entre com sua conta do Public
 	<img src="images/icons/door_in.png" alt="" />
 <% end %>
 </div>
