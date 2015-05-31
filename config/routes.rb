@@ -17,8 +17,7 @@ Mercurio::Application.routes.draw do
   get 'people/emails' => "people#emails", :as => :emails
 
   resources :people
-
-  get 'admin', to: 'admin#edit'
+  resources :admins
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
     get 'sign_in', :to => 'users/sessions#new', :as => :new_user_session

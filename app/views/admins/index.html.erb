@@ -1,0 +1,19 @@
+<h1><%= t(:listing) %> <%= t(:users) %></h1>
+
+<table class="grade">
+  <tr>
+    <th><%= t(:email) %></th>
+    <th>Admin?</th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <% if user != current_user %>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td><%= user.email %></td>
+      <td><%= user.admin %></td>
+      <td><%= button_link_to t(:toggle), edit_admin_path(user), :class => 'button' %></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>
