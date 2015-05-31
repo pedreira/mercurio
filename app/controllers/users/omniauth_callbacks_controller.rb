@@ -5,7 +5,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     begin
 
-      @user = User.from_omniauth(omniauth, current_user)
+      @user = User.from_omniauth(omniauth)
       if @user and @user.persisted?
         flash[:notice] = I18n.t "devise.omniauth_callbacks.success"
         sign_in_and_redirect @user, :event => :authentication
